@@ -9,7 +9,7 @@ def get_icon_choices():
 
     with open(PATH) as f:
         icons = yaml.safe_load(f)
-    for key, value in icons.iteritems():
+    for key, value in icons.items():
         if ('solid' in value['styles']):
             key = "fas fa-"+key
         elif ('brands' in value['styles']):
